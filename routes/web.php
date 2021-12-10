@@ -14,5 +14,6 @@
 */
 
 $router->post('/', 'Alunos\CriarAlunoController@executar');
+$router->put('/{id}', 'Alunos\AlterarAlunoController@executar');
 $router->get('/{id}', 'Alunos\VerAlunoController@executar');
 $router->get('/', 'Alunos\ListarAlunosController@executar');
