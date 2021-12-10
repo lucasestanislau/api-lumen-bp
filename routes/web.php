@@ -13,7 +13,7 @@
 |
 */
 
-$router->post('/', 'Alunos\CriarAlunoController@executar');
-$router->put('/{id}', 'Alunos\AlterarAlunoController@executar');
-$router->get('/{id}', 'Alunos\VerAlunoController@executar');
-$router->get('/', 'Alunos\ListarAlunosController@executar');
+$router->post('alunos/', 'Alunos\CriarAlunoController@executar');
+$router->put('alunos/{id}', 'Alunos\AlterarAlunoController@executar');
+$router->get('alunos/{id}', 'Alunos\VerAlunoController@executar');
+$router->get('alunos/', 'Alunos\ListarAlunosController@executar');
