@@ -13,6 +13,6 @@
 |
 */
 
-$router->get('/', function () use ($router) {
-    return $router->app->version();
-});
+$router->post('/', 'Alunos\CriarAlunoController@executar');
+$router->get('/{id}', 'Alunos\VerAlunoController@executar');
+$router->get('/', 'Alunos\ListarAlunosController@executar');
