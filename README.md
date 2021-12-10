@@ -1,11 +1,4 @@
-# Lumen PHP Framework
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://img.shields.io/packagist/dt/laravel/framework)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://img.shields.io/packagist/v/laravel/framework)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://img.shields.io/packagist/l/laravel/framework)](https://packagist.org/packages/laravel/lumen-framework)
-
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
 
 ## Utilização da API 
 
@@ -17,9 +10,19 @@ Laravel Lumen is a stunningly fast PHP micro-framework for building web applicat
 
 *Exemplo: http://localhost:8888/alunos ao utilizar o método HTTP post, deve ser informado os parâmetros necessários: nome, email, data_nascimento, cpf (apenas números).
 
+## Rotas disponíveis
 
+- Ver um aluno: (GET) http://localhost:8888/alunos/1 
+- Criar aluno: (POST) http://localhost:8888/alunos/1 
+- Alterar aluno: (PUT) http://localhost:8888/alunos/1 
+- Listar os alunos: (GET) http://localhost:8888/alunos 
 
+## Corpo da requisição
 
-## License
+{
+	"nome" : "Lucas",
+	"email" : "lucas@lucas.com",
+	"cpf": "01245878956",
+	"data_nascimento": "1998-11-14"
+}
 
-The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
